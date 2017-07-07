@@ -52,3 +52,5 @@ write_profile_d_script
 write_export
 
 post_compile_hook
+
+${build_pack_path}/bin/phoenix-compile $1 $2 $3
