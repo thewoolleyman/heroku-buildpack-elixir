@@ -52,4 +52,8 @@ backup_mix
 write_profile_d_script
 write_export
 
+output_section "--------DEBUG: Running post_compile_hook"
+
 post_compile_hook
+
+output_section "--------DEBUG: Ran post_compile_hook, done with supply"
