@@ -113,6 +113,9 @@ function write_export() {
   local export_line="export PATH=$(platform_tools_path):$(erlang_path)/bin:$(elixir_path)/bin:\$PATH
                      export LC_CTYPE=en_US.utf8
                      export MIX_ENV=${MIX_ENV}"
+  echo "$(platform_tools_path):$(erlang_path)/bin:$(elixir_path)/bin:\$PATH" > $env_path/PATH
+  echo "en_US.utf8" > $env_path/LC_CTYPE
+  echo "${MIX_ENV}" > $env_path/MIX_ENV
 
   echo $export_line > $build_pack_path/export
 }
